@@ -1,6 +1,27 @@
 -- @Project: FiveM Tools
 -- @License: GNU General Public License v3.0
 
+-- Desposit money in the bank.
+function DespositMoney(emitter, amount)
+
+  TriggerEvent("ft_gamemode:SvGetPlayerData", emitter, "data", function (data)
+        
+    local cash = data.cash - ( amount + 0.0 )
+    local bank = data.bank + ( amount + 0.0 )
+
+    TriggerEvent("ft_gamemode:SvSetPlayerData", emitter, { cash = cash, bank = bank })
+
+  end)
+
+end
+
+RegisterServerEvent('ft_simplebank:SvDespositMoney')
+AddEventHandler('ft_simplebank:SvDespositMoney', function(emitter, amount)
+
+  DespositMoney(emitter, amount)
+
+end)
+
 -- Withdraw money from the bank.
 function WithdrawBankMoney(emitter, amount)
 
