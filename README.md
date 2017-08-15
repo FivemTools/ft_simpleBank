@@ -1,28 +1,30 @@
 # ft_simpleBank
-Warning : pre-release version
+This ressource is fully compatible with FxServer.
+
+----------
 
 ### Prerequisites
 
 What things you need to install this script them
 
- - [ft_gamemode](https://github.com/FivemTools/ft_gamemode)
+ - [ft_players](https://github.com/FivemTools/ft_players)
+ - [ft_cash](https://github.com/FivemTools/ft_cash)
+ - [ft_simpleBank](https://github.com/FivemTools/ft_simpleBank)
 
 ### Installing
 
-Put the folder where you want it and add it to the citmp-server.yml file
+Extract the .ZIP into the ressource folder and add it to the server.cfg file.
 
 Example:
 
 ```
-- ft_gamemode
+start ft_gamemode
 ```
-
-### Documentation
-
-[Wiki](https://github.com/FivemTools/ft_gamemode/wiki)
 
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
+
+* samuelds

@@ -6,12 +6,12 @@ resource_manifest_version "77731fab-63ca-442c-a67b-abc70f28dfa5"
 
 dependencies {
   "ft_players",
-  "ft_cash",
+  "ft_cash"
 }
 
 server_scripts {
   "sv_events.lua",
-  "sv_functions.lua",
+  "sv_functions.lua"
 }
 
 server_exports {
@@ -19,6 +19,6 @@ server_exports {
   "WithdrawBank",
   "AddBank",
   "RemoveBank",
-  "TransferBank",
+  "TransferBank"
 }
 
