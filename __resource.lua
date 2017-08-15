@@ -1,21 +1,24 @@
 -- @Project: FiveM Tools
 -- @License: GNU General Public License v3.0
+-- @Author: CanadienFr
 
 resource_manifest_version "77731fab-63ca-442c-a67b-abc70f28dfa5"
 
 dependencies {
-  "ft_gamemode",
+  "ft_players",
   "ft_cash",
 }
 
-client_scripts {
-  "cl_simpleBank.lua",
-}
-
 server_scripts {
-  "sv_simpleBank.lua",
+  "sv_events.lua",
+  "sv_functions.lua",
 }
 
-exports {
-  "GetBankMoney"
+server_exports {
+  "DespositBank",
+  "WithdrawBank",
+  "AddBank",
+  "RemoveBank",
+  "TransferBank",
 }
+
