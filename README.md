@@ -9,16 +9,15 @@ What things you need to install this script them
 
  - [ft_players](https://github.com/FivemTools/ft_players)
  - [ft_cash](https://github.com/FivemTools/ft_cash)
- - [ft_simpleBank](https://github.com/FivemTools/ft_simpleBank)
 
 ### Installing
 
-Extract the .ZIP into the ressource folder and add it to the server.cfg file.
+Extract the .ZIP into the resource folder, rename the extracted folder to ft_simpleBank and add it to the server.cfg file.
 
 Example:
 
 ```
-start ft_gamemode
+start ft_simpleBank
 ```
 
 ## License
